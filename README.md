@@ -11,7 +11,8 @@ http://www.robopapa.com/Projects/RaspberryPiArduinoCommunication
 2. Arduino Mega/Uno
 3. Logic Level converter 
 4. Jumper wires
-5. Breadboard 
+5. LEDs
+6. Breadboard 
 
 # Instructions to be followed on Raspberry Pi 3 
 
@@ -30,10 +31,7 @@ The following steps are to be followed in the raspberry pi
 (comment the line that contains this. It is present towards the end)
 11. `sudo minicom -b 9600 -o -D /dev/ttyAMA0`
 
-12. Sending numbers 8 and 9 via serial
-
-`echo 8 > /dev/ttyAMA0`
-`echo 9 > /dev/ttyAMA0`
+13.  Complete connections as described below using the Logic level converter and 
 
 IMPORTANT: Use a logic level converter to convert the 5V logic of the arduino
 to the 3.3V logic used by the raspberry pi 3.
@@ -44,8 +42,24 @@ The connections are as follows:
 
 3.3V and 5V devices need to have a common GND 
 
-Tx (Arduino) ---> HV pin 1 on LLC
-Rx (Arduino) ---> HV pin 2 on LLC 
+Tx (Arduino)    --->      HV pin 1 on LLC
+Rx (Arduino)    --->      HV pin 2 on LLC 
 
-Tx(Rpi3) ---> LV pin 2 on LLC
-Rx(Rpi3) ---> LV pin 1 on LLC 
+Tx(Rpi3)        --->      LV pin 2 on LLC
+Rx(Rpi3)        --->      LV pin 1 on LLC 
+
+LED GNDs        --->      Arduino GND
+LED 1 Cathode   --->      Arduino Pin 7
+LED 2 Cathode   --->      Arduino Pin 8
+LED 3 Cathode   --->      Arduino Pin 9
+
+14. Sending numbers 8 and 9 via serial
+
+`echo 7 > /dev/ttyAMA0`
+
+`echo 8 > /dev/ttyAMA0`
+
+`echo 9 > /dev/ttyAMA0`
+
+
+
