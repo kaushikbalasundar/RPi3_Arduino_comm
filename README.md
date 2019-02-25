@@ -1,7 +1,7 @@
 # RPi3_Arduino_comm
 Communicate between Rpi3 and Arduino Uno/Mega using UART
 
-## OPTION1: USING MINICOM
+## OPTION #1: USING MINICOM
 
 ### Original reference
 
@@ -64,7 +64,7 @@ LED 3 Cathode   --->      Arduino Pin 9
 `echo 9 > /dev/ttyAMA0`
 
 
-# OPTION 2: WITHOUT USING MINICOM
+# OPTION #2: WITHOUT USING MINICOM
 
 ### Original References:
 
