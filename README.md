@@ -3,11 +3,11 @@ Communicate between Rpi3 and Arduino Uno/Mega using UART
 
 ## OPTION1: USING MINICOM
 
-# Original reference
+### Original reference
 
 http://www.robopapa.com/Projects/RaspberryPiArduinoCommunication
 
-# Components required: 
+### Components required: 
 
 1. Raspberry Pi 3
 2. Arduino Mega/Uno
@@ -16,7 +16,7 @@ http://www.robopapa.com/Projects/RaspberryPiArduinoCommunication
 5. LEDs
 6. Breadboard 
 
-# Instructions to be followed on Raspberry Pi 3 
+### Instructions to be followed on Raspberry Pi 3 
 
 The following steps are to be followed in the raspberry pi
 
@@ -64,28 +64,28 @@ LED 3 Cathode   --->      Arduino Pin 9
 `echo 9 > /dev/ttyAMA0`
 
 
-## OPTION 2: WITHOUT USING MINICOM
+# OPTION 2: WITHOUT USING MINICOM
 
-# Original References:
+### Original References:
 
 https://classes.engineering.wustl.edu/ese205/core/index.php?title=Serial_Communication_between_Raspberry_Pi_%26_Arduino
 https://www.teachmemicro.com/raspberry-pi-serial-uart-tutorial/#
 
-# Components Required: 
+### Components Required: 
 
 1. Arduino Uno/Mega
 2. Raspberry Pi 
 3. 5V to 3.3V Logic Level Converter
 4. Jumpers
 
-# Connections: 
+### Connections: 
 
 ![Follow this connection diagram](https://i0.wp.com/www.teachmemicro.com/wp-content/uploads/2018/06/Arduino-UNO-Raspberry-Pi-connection_bb.jpg?ssl=1)
 
 We are using a logic level converter to convert the 5V signals sent by the Arduino into 3.3V signals that can be received safely by the 
 Raspberry Pi 3 without damaging the RPi3. 
 
-# Procedure1 : Rpi3 to Arduino Uno 
+### Procedure1 : Rpi3 to Arduino Uno 
 
 1. Upload rpitoarduino.py into your Raspberry pi 3 and execute the program. The script will send "hello" to the Arduino
 2. Open the SerialEvent on the Arduino IDE.  Go to File > Examples > 04.Communication > SerialEvent.  
@@ -94,7 +94,7 @@ Raspberry Pi 3 without damaging the RPi3.
 at the baud rate of 9600. 
 5. Measure the pulse width of the signal using oscilloscope and record. 
 
-# Procedure2: Arduino to  Rpi3 
+### Procedure2: Arduino to  Rpi3 
 
 1. Upload arduinotorpi.py onto your Raspberry Pi 3. 
 2. Upload arduinotorpi.uno onto your Arduino board 
