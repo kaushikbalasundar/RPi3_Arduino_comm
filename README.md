@@ -85,7 +85,7 @@ https://www.teachmemicro.com/raspberry-pi-serial-uart-tutorial/#
 We are using a logic level converter to convert the 5V signals sent by the Arduino into 3.3V signals that can be received safely by the 
 Raspberry Pi 3 without damaging the RPi3. 
 
-### Procedure1 : Rpi3 to Arduino Uno 
+### Procedure: Rpi3 to Arduino Uno 
 
 1. Upload rpitoarduino.py into your Raspberry pi 3 and execute the program. The script will send "hello" to the Arduino
 2. Open the SerialEvent on the Arduino IDE.  Go to File > Examples > 04.Communication > SerialEvent.  
@@ -94,7 +94,7 @@ Raspberry Pi 3 without damaging the RPi3.
 at the baud rate of 9600. 
 5. Measure the pulse width of the signal using oscilloscope and record. 
 
-### Procedure2: Arduino to  Rpi3 
+### Procedure: Arduino to  Rpi3 
 
 1. Upload arduinotorpi.py onto your Raspberry Pi 3. 
 2. Upload arduinotorpi.uno onto your Arduino board 
@@ -102,8 +102,3 @@ at the baud rate of 9600.
 4. Measure the pulse width of the signal being sent by Arduino to Raspberry Pi 3 at the baud rate of 9600 and record. 
 
 Hypothesis: Pulse duration of both the  cases need to be the same as the same data is being sent.
-
-
-
-
-
